@@ -1,29 +1,78 @@
----
-
----
-
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <title>🌍 Portafolio - George Contreras | Desarrollador Frontend</title>
+    <meta
+      name="description"
+      content="Portafolio de George Contreras, desarrollador frontend especializado en React, Astro y Tailwind CSS."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://portafolio-psi-swart.vercel.app/"
+    />
+    <meta property="og:title" content="Portafolio - George Contreras" />
+    <meta
+      property="og:description"
+      content="Descubre los proyectos y trabajos de George Contreras, desarrollador frontend con experiencia en React, Astro y Tailwind CSS."
+    />
+    <meta property="og:image" content="/Neon.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://portafolio-psi-swart.vercel.app/"
+    />
+    <meta property="twitter:title" content="Portafolio - George Contreras" />
+    <meta
+      property="twitter:description"
+      content="Descubre los proyectos y trabajos de George Contreras, desarrollador frontend con experiencia en React, Astro y Tailwind CSS."
+    />
+    <meta property="twitter:image" content="/Neon.webp" />
+
+    <!-- Datos estructurados (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "George Contreras",
+        "url": "https://portafolio-psi-swart.vercel.app/",
+        "sameAs": [
+          "https://www.linkedin.com/in/georgecontreras241/",
+          "https://github.com/tu_usuario"
+        ],
+        "jobTitle": "Desarrollador Frontend",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance"
+        }
+      }
+    </script>
   </head>
   <body>
     <main>
-      <img src="./Neon.png" alt="Neon Logo" class="w-full fixed top-0 left-0 z-0" />
+      <img
+        src="./Neon.webp"
+        alt="Fondo de neón representando creatividad y tecnología"
+        class="h-full fixed top-0 left-0 z-0 object-cover"
+      />
       <slot />
     </main>
   </body>
 </html>
 
-<style>
+<style is:global>
   body {
     font-family: system-ui, sans-serif;
     margin: 0;
     background-color: black;
+    color: #fff;
   }
   html {
     scroll-behavior: smooth;

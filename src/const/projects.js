@@ -7,7 +7,7 @@ const projects = [
     technologies: ["React", "Node", "JavaScript", "Zustand", "Tailwind CSS", "CSS Modules", "MongoDB", "Bcrypt"],
     url: "https://password-manager-three-liard.vercel.app",
     gitHub: "https://github.com/GeorgeContreras241/newPass",
-    img: "./project06-min.jpg",
+    img: "./project06.webp",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projects = [
     technologies: ["Astro", "React", "JavaScript", "Tailwind CSS", "CSS Modules", "React Motion"],
     url: "https://metalicasjyn.vercel.app",
     gitHub: "https://github.com/GeorgeContreras241/Frontend-metalicas-j-y-n",
-    img: "./project01-min.jpg",
+    img: "./project01.webp",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const projects = [
     technologies: ["Next.js", "CSS Modules", "JavaScript", "React", "Zustand"],
     url: "https://store-api-sage.vercel.app",
     gitHub: "https://github.com/GeorgeContreras241/Store-Api",
-    img: "./project04-min.jpg",
+    img: "./project04.webp",
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ const projects = [
     technologies: ["Astro", "React", "JavaScript", "Tailwind CSS", "CSS Modules", "React Motion"],
     url: "https://github.com/joaopaulo-dev/calculator-app",
     gitHub: "https://github.com/joaopaulo-dev/calculator-app",
-    img: "./project05-min.jpg",
+    img: "./project05.webp",
   },
 ];
 
