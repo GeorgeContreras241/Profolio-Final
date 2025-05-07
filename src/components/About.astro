@@ -1,0 +1,115 @@
+<section id="sobre-mi" class="main lg:h-screen sm:w-full relative z-999">
+  <div class="container__grid lg:gap-4 md:gap-2 gap-4">
+    <div class="container__img">
+      <img
+        src="https://lacomikeria.com/wp-content/uploads/2024/08/IMAGEN-PARA-PORTAL-2024-08-07T123207.427-560x600.png"
+        alt="imagen"
+        class="img rounded-full"
+      />
+    </div>
+    <div
+      class="flex flex-col justify-center text-white p-4 lg:gap-8 md:gap-4 gap-4"
+    >
+      <div class="flex flex-col lg:gap-8 md:gap-4 gap-1">
+        <h2 class="text-white font-bold text-3xl">Sobre mi</h2>
+        <p
+          class="text-neutral-300 lg:text-[1.2rem] md:text-[1.1rem] sm:text-[.9rem] text-[.8rem]"
+        >
+          Soy un desarrollador enfocado en el frontend, tecnólogo en Desarrollo
+          de Software por la Universidad de Cundinamarca. Aunque mi especialidad
+          es el frontend, también tengo experiencia en backend utilizando
+          Node.js, Express y MongoDB (stack MERN). Actualmente estoy buscando mi
+          primera oportunidad laboral como desarrollador.
+        </p>
+      </div>
+
+      <ul
+        class="flex flex-row flex-wrap lg:gap-4 md:gap-3 gap-2 lg:text-[1rem] md:text-[1rem] sm:text-[.9rem] text-[.8rem] text-orange-200"
+      >
+        <li>JavaScript</li>
+        <li>React - Redux - Zustand</li>
+        <li>Astro</li>
+        <li>Next.js</li>
+        <li>Tailwind CSS</li>
+        <li>CSS Modules</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>MongoDB</li>
+      </ul>
+    </div>
+  </div>
+  <div
+    class="raltive z-50 text-white m-auto min-w-[300px] max-w-[1200px] w-[95%]"
+  >
+    <h3
+      class="font-bold text-2xl mb-4 lg:text-center sm:text-center text-start"
+    >
+      Mis Estudios
+    </h3>
+    <div
+      class="flex flex-row flex-wrap gap-2 lg:justify-center md:justify-center justify-start px-2"
+    >
+      <div class="flex flex-row items-center justify-center">
+        <div class="h-16 w-16">
+          <img
+            src="./udec-logo.png"
+            alt="logo"
+            class="img w-full h-auto  object-contain aspect-square"
+          />
+        </div>
+        <div class="flex flex-col h-full px-4">
+          <span class="font-bold">Iniversidadd de Cundinamarca</span>
+          <p class="text-[.9rem] text-gray-300">
+            Tecnologia en Desarrollo de Software
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-row items-center justify-center">
+        <img
+          src="./talento-logo.png"
+          alt="logo"
+          class="img rounded-full h-8 w-auto"
+        />
+        <div class="flex flex-col h-full px-4">
+          <span class="font-bold">Talento Tech- Ministerio de Educación.</span>
+          <p class="text-[.9rem] text-gray-300">
+            Bootcamp de Desarrollo Web FullStack.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .main {
+    display: grid;
+    place-content: center;
+  }
+  .container__grid {
+    width: clamp(300px, 95%, 1200px);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: auto;
+  }
+  .container__img {
+    width: clamp(200px, 400px, 300px);
+    height: clamp(200px, 400px, 300px);
+    border-radius: 9999px;
+  }
+
+  @media (max-width: 768px) {
+    .container__grid {
+      width: 100%;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr;
+    }
+    .container__img {
+      padding-top: 50px;
+      width: 200px;
+      height: auto;
+      border-radius: 9999px;
+      margin: auto;
+    }
+  }
+</style>

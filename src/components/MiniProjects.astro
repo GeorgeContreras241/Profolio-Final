@@ -1,0 +1,44 @@
+---
+import miniProjects from "../const/miniProjects";
+---
+
+<div
+  class="flex flex-col gap-4 items-center px-4 py-6 min-w-[300px] max-w-[1200px] w-[95%] m-auto"
+>
+  <h4
+    class="inline-block w-full text-white mb-2 font-bold text-[1.5rem] lg:text-[2rem] md:text-[1.2rem] xl:text-[1.8rem]"
+  >
+    Mini proyectos
+  </h4>
+
+  {
+    miniProjects.map((pro, index) => (
+      <details class="text-white bg-neutral-800 p-4 w-full hover:bg-neutral-700/80 hover:cursor-pointer rounded-lg">
+        <summary class="text-white font-semibold mb-2 cursor-pointer">
+          {pro.title}
+        </summary>
+
+        <p class="text-gray-300 text-sm xl:text-[1rem] md:text-[0.8rem] mb-3 w-full">
+          {pro.description}
+        </p>
+
+        <ul class="flex flex-wrap gap-2 mb-4">
+          {pro.technologies.map((tech, index) => (
+            <li class="bg-blue-700 px-3 py-1 rounded-2xl text-white text-sm">
+              {tech}
+            </li>
+          ))}
+        </ul>
+
+        <div class="flex justify-end gap-2 items-center mt-2">
+          <button class="bg-neutral-700 px-4 py-1 rounded-[8px]">
+            Visitar
+          </button>
+          <button class="bg-neutral-700 px-4 py-1 rounded-[8px]">
+            Git Hub
+          </button>
+        </div>
+      </details>
+    ))
+  }
+</div>

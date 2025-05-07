@@ -1,0 +1,39 @@
+.main{
+    display: grid;
+    grid-template-areas: "botones botones"
+    "imagen desp";
+    width: clamp(300px, 95%, 1200px);
+    margin: auto;
+}
+.buttons{
+    grid-area: botones;
+    display: flex;
+    align-items: center;
+}
+.img{
+    grid-area: imagen;
+    width: clamp(200px, 400px, 300px);
+    height: clamp(200px, 400px, 300px);
+    border-radius: 9999px;
+    aspect-ratio: 16/9;
+}
+.desp{
+    grid-area: desp;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}   
+@media (max-width: 768px) {
+    .main{
+        width: 100%;
+        grid-template-areas: "botones"
+        "imagen"
+        "desp";
+    }
+    .img{
+        width: clamp(200px, 400px, 300px);
+        height: clamp(200px, 400px, 300px);
+        border-radius: 9999px;
+        margin: auto;
+    }
+}

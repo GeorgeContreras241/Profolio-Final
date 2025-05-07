@@ -1,0 +1,90 @@
+---
+import Nanvar from "./Nanvar.astro";
+---
+
+<section
+  class="hero h-[92dvh] bg-cover bg-center flex flex-col justify-center items-center text-white relative"
+  id="inicio"
+>
+  <div class="flex flex-col justify-center px-4">
+    <h1 class="hero-fade lg:text-5xl font-extrabold mb-4 md:text-4xl text-2xl">
+      Hola, Soy George Contreras
+    </h1>
+    <h2
+      class="hero-fade delay-1 lg:text-2xl sm:text-[1.2rem] font-light lg:mb-6 text-[1rem] md:mb-4 mb-2"
+    >
+      Desarrollador Frontend | React · Next.js · Astro
+    </h2>
+    <p
+      class="hero-fade delay-2 lg:text-lg sm:text-sm text-sm sm:text-gray-300 italic mb-8"
+    >
+      Apasionado por construir experiencias web modernas y eficientes.
+    </p>
+    <div
+      class="hero-fade delay-3 flex flex-row justify-end items-center gap-4 mb-8"
+    >
+      <a
+        href="https://github.com/GeorgeContreras241"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          src="./git.svg"
+          alt="GitHub"
+          class="w-10 h-10 hover:scale-110 transition"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/georgecontreras241"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          src="./linkedin.svg"
+          alt="LinkedIn"
+          class="w-10 h-10 hover:scale-110 transition"
+        />
+      </a>
+      <a
+        class="flex flex-row items-center w-50 gap-2 border border-gray-800 rounded-full px-4 py-2 font-semibold hover:bg-gray-700/50 hover:text-green-600 transition"
+        href="./CV.pdf"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          src="./cv.svg"
+          alt="CV"
+          class="w-11 h-11 hover:scale-110 transition"
+        />
+        <span>Descargar CV</span>
+      </a>
+    </div>
+  </div>
+</section>
+<style is:global>
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-fade {
+    opacity: 0;
+    animation: fadeUp 0.8s ease-out forwards;
+  }
+
+  .hero-fade.delay-1 {
+    animation-delay: 0.2s;
+  }
+  .hero-fade.delay-2 {
+    animation-delay: 0.4s;
+  }
+  .hero-fade.delay-3 {
+    animation-delay: 0.6s;
+  }
+</style>

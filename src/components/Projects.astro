@@ -1,0 +1,9 @@
+---
+import { Projects } from "./Projects/Projects.jsx";
+import MiniProjects from "../components/MiniProjects.astro";
+---
+
+<div class="h-full relative z-999 mt-30" id="proyectos">
+  <Projects client:only="react" />
+  <MiniProjects />
+</div>
