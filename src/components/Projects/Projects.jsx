@@ -51,12 +51,12 @@ export const Projects = () => {
             key={selected.img}
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.4 }}
+            exit={{ opacity: 0, scale: 0.1 }}
+            transition={{ duration: 0.2 }}
             className={`flex p-6 xl:w-[500px] xl:h-[400px] lg:w-[450px] lg:h-[350px] md:w-[350px] md:h-[200px] w-[80%] m-auto`}
 
           >
-            <img src={selected.img} alt='' className='w-full aspect-auto object-contain' />
+            <img src={selected.img} alt={selected.title} className='w-full aspect-auto object-contain' />
           </motion.div>
         </AnimatePresence>
 
@@ -66,9 +66,9 @@ export const Projects = () => {
           transition={{ delay: 0.2, duration: 0.5 }}
           className={`${styles.desp} flex flex-col text-white md:mt-6 px-4`}
         >
-          <h2 className='text-md font-bold xl:text-[2rem] md:text-[1.5rem] md:mb-8 mb-2'>
+          <h4 className='text-md font-bold xl:text-[2rem] md:text-[1.5rem] md:mb-8 mb-2'>
             {selected.title}
-          </h2>
+          </h4>
           <p className='text-sm xl:text-[1rem] md:text-[0.8rem] text-[.7rem] mb-4 text-gray-200'>
             {selected.description}
           </p>

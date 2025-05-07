@@ -5,11 +5,11 @@ import miniProjects from "../const/miniProjects";
 <div
   class="flex flex-col gap-4 items-center px-4 py-6 min-w-[300px] max-w-[1200px] w-[95%] m-auto"
 >
-  <h4
+  <h5
     class="w-full text-white mb-2 font-bold text-[1.5rem] lg:text-[2rem] md:text-[1.2rem] xl:text-[1.8rem]"
   >
     Mini proyectos
-  </h4>
+  </h5>
 
   {
     miniProjects.map((pro, index) => (
@@ -31,12 +31,22 @@ import miniProjects from "../const/miniProjects";
         </ul>
 
         <div class="flex justify-end gap-2 items-center mt-2">
-          <button class="bg-neutral-700 px-4 py-1 rounded-[8px]">
+          <a
+            href={pro.url}
+            target="_blank"
+            rel="noreferrer"
+            class="bg-neutral-700 px-4 py-1 rounded-[8px]"
+          >
             Visitar
-          </button>
-          <button class="bg-neutral-700 px-4 py-1 rounded-[8px]">
+          </a>
+          <a
+            href={pro.gitHub}
+            target="_blank"
+            rel="noreferrer"
+            class="bg-neutral-700 px-4 py-1 rounded-[8px]"
+          >
             Git Hub
-          </button>
+          </a>
         </div>
       </details>
     ))
